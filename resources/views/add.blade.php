@@ -4,11 +4,7 @@
 
 @section('header')
 
-    <a href="/home" class="btn btn-primary">Home</a>
-
-    <form action="/logout" method="POST">
-        <button type="submit">Logout</button>
-    </form>
+    <x-header></x-header>
 
 @endsection
 
