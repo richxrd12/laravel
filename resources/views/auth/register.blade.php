@@ -37,4 +37,6 @@
         <button type="submit">Register</button>
     </form>
 
+    <a href="/login">Already have an account? Login</a>
+
 @endsection

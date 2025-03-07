@@ -27,7 +27,7 @@ class RegisterUserController extends Controller
         Auth::login($user);
 
         //Debería ser el home
-        return view('auth.login');
+        return view('home');
         
     }
 }
