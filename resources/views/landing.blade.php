@@ -23,8 +23,8 @@
 
 @section('main')
 
-    <h1>Esto es la landing page</h1>
-
+    <h1 class="text-2xl text-center">Esto es la landing page</h1>
+    <p class="text-red-600">Hola</p>
 @endsection
 
 
