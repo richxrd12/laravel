@@ -4,39 +4,45 @@
 
 @section('header')
 
-    <a href="/">Imagen empresa</a>
+    <x-header>
+
+    </x-header>
 
 @endsection
 
 
 @section('main')
 
-    <form action="/register" method="POST">
+    <h1 class="text-4xl text-center my-6">Register</h1>
+
+    <x-form action="/register" method="POST">
         @csrf
 
         <label for="name">Name</label>
-        <input type="text" name="name" id="name" placeholder="Name...">
+        <x-input type="text" name="name"/>
 
         <x-error error="name"/>
 
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="Email...">
+        <x-input type="email" name="email"/>
 
         <x-error error="email"/>
 
         <label for="password">Password</label>
-        <input type="password" name="password" id="password" placeholder="Password...">
+        <x-input type="password" name="password"/>
 
         <x-error error="password"/>
 
         <label for="password_confirmation">Repeat password</label>
-        <input type="password" name="password_confirmation" id="password_confirmation" placeholder="Repeat password...">
+        <x-input type="password" name="password_confirmation" id="password_confirmation" placeholder="Repeat password..."/>
 
         <x-error error="password-confirmation"/>
 
-        <button type="submit">Register</button>
-    </form>
+        <x-button>Register</x-button>
+    </x-form>
 
-    <a href="/login">Already have an account? Login</a>
+    <p class="text-blue-400 text-center mt-2 hover:text-blue-600">
+        <a href="/login">Already have an account? Login</a>
+    </p>
 
 @endsection

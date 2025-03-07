@@ -14,7 +14,7 @@
 
     <div class="flex items-center justify-center mt-4">
         <a href="/add" class="bg-blue-500 hover:bg-blue-700 text-white font-light py-2 px-4 rounded-full">
-            Add new Blog
+            + Add new Blog
         </a>
     </div>
     @php
@@ -25,7 +25,7 @@
 
     @endphp
 
-    <div id="posts" class="flex flex-col justify-center items-center">
+    <div id="posts" class="flex flex-wrap gap-x-6 gap-y-4 items-center w-5/6 m-auto">
         @foreach ($blogs as $blog)
             <x-card :title="$blog->title" :text="$blog->text" :id="$blog->id">
                 @if ($userBlogs->contains($blog))

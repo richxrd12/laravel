@@ -4,28 +4,31 @@
 
 @section('header')
 
-    <a href="/">Imagen empresa</a>
+    <x-header></x-header>
 
 @endsection
 
-
 @section('main')
 
-    <form action="/login" method="POST">
+    <h1 class="text-4xl text-center my-6">Login</h1>
+
+    <x-form action="/login" method="POST">
         
         @csrf
 
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="Email..." :value="old('email')">
+        <x-input type="email" name="email"/>
 
         <x-error error="email"/>
         
         <label for="password">Password</label>
-        <input type="password" name="password" id="password" placeholder="Password...">
+        <x-input type="password" name="password"/>
 
-        <button type="submit">Login</button>
-    </form>
+        <x-button>Login</x-button>
+    </x-form>
 
-    <a href="/register">Do not have an account? Register</a>
+    <p class="text-blue-400 text-center mt-2 hover:text-blue-600">
+        <a href="/register">Do not have an account? Register</a>
+    </p>
 
 @endsection

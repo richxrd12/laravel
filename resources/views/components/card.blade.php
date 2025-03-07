@@ -1,5 +1,5 @@
 <div class="max-w-sm rounded overflow-hidden border-1 border-gray-500 mt-5 justify-center items-center size-80 flex flex-col min-h-full">
-    <h2 class="mb-4 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-2xl dark:text-black mt-2">{{ $title }}</h2>
+    <h2 class="m-4 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-2xl dark:text-black w-fit">{{ $title }}</h2>
     <p class="mx-4">{{ $text }}</p>
 
     <div class="flex items-end mt-auto">

@@ -1,0 +1,2 @@
+<input type="<?php echo e($type); ?>" name="<?php echo e($name); ?>" id="<?php echo e($name); ?>" placeholder="<?php echo e(ucfirst($name)); ?>..."
+    class="px-4 py-1 border rounded-lg mb-4 mt-2"><?php /**PATH C:\Users\richa\Desktop\proyecto-practicas\laravel\resources\views/components/input.blade.php ENDPATH**/ ?>
