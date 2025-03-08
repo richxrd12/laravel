@@ -43,7 +43,7 @@
 
     ?>
 
-    <div id="posts" class="flex flex-wrap gap-x-6 gap-y-4 items-center w-5/6 m-auto">
+    <div id="posts" class="flex flex-wrap gap-x-6 gap-y-4 justify-center w-5/6 m-auto">
         <?php $__currentLoopData = $blogs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $blog): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
             <?php if (isset($component)) { $__componentOriginal53747ceb358d30c0105769f8471417f6 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal53747ceb358d30c0105769f8471417f6 = $attributes; } ?>

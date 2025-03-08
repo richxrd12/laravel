@@ -4,6 +4,7 @@ $__newAttributes = [];
 $__propNames = \Illuminate\View\ComponentAttributeBag::extractPropNames(([
     'type',
     'name',
+    'value'
 ]));
 
 foreach ($attributes->all() as $__key => $__value) {
@@ -22,6 +23,7 @@ unset($__newAttributes);
 foreach (array_filter(([
     'type',
     'name',
+    'value'
 ]), 'is_string', ARRAY_FILTER_USE_KEY) as $__key => $__value) {
     $$__key = $$__key ?? $__value;
 }
@@ -34,5 +36,5 @@ foreach ($attributes->all() as $__key => $__value) {
 
 unset($__defined_vars); ?>
 
-<input type="<?php echo e($type); ?>" name="<?php echo e($name); ?>" id="<?php echo e($name); ?>" placeholder="<?php echo e(ucfirst($name)); ?>..."
-    class="px-4 py-1 border rounded-lg mb-4 mt-2"><?php /**PATH C:\Users\richa\Desktop\proyecto-practicas\laravel\resources\views/components/input.blade.php ENDPATH**/ ?>
+<input type="<?php echo e($type); ?>" name="<?php echo e($name); ?>" id="<?php echo e($name); ?>" placeholder="<?php echo e(ucfirst($name)); ?>..." value="<?php echo e($value); ?>"
+    class="px-4 py-1 border rounded-lg mb-4 mt-2"><?php /**PATH C:\Users\richa\Desktop\proyecto-practicas\laravel\resources\views/components/edit-input.blade.php ENDPATH**/ ?>

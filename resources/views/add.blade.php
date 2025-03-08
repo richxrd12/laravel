@@ -11,15 +11,17 @@
 
 @section('main')
 
-    <form action="/blog/add" method="POST">
+    <h1 class="text-3xl text-center my-10">Add a new post</h1>
+
+    <x-form action="/blog/add" method="POST">
         @csrf
         <label for="title">Title</label>
-        <input type="text" name="title" id="title">
+        <x-input type="text" name="title"/>
     
         <label for="text">Text</label>
-        <input type="textarea" name="text" id="text">
+        <x-input type="textarea" name="text"/>
         
-        <button type="submit">Add</button>
-    </form>
+        <x-button>Add</x-button>
+    </x-form>
 
 @endsection

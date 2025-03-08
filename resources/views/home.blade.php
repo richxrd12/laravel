@@ -25,7 +25,7 @@
 
     @endphp
 
-    <div id="posts" class="flex flex-wrap gap-x-6 gap-y-4 items-center w-5/6 m-auto">
+    <div id="posts" class="flex flex-wrap gap-x-6 gap-y-4 justify-center w-5/6 m-auto">
         @foreach ($blogs as $blog)
             <x-card :title="$blog->title" :text="$blog->text" :id="$blog->id">
                 @if ($userBlogs->contains($blog))
