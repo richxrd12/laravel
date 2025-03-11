@@ -34,3 +34,6 @@ Route::get('/blog/{id}/edit', [BlogController::class, 'show']);
 //Ruta para añadir
 Route::get('/add', [BlogController::class, 'create']);
 Route::post('/blog/add', [BlogController::class, 'store']);
+
+//Ruta para listar todos los blogs
+Route::get('/blogs', [BlogController::class, 'list']);

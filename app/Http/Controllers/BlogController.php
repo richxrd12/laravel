@@ -17,6 +17,14 @@ class BlogController extends Controller
         ]);
     }
 
+    public function list(Request $request) {
+        $userId = auth()->id();
+        $blogs = Blog::where('user_id', $userId)->orderBy('id', 'desc')->get();
+        return response()->json($blogs);
+    }
+    
+    
+
     public function destroy($id){
         $blog = Blog::find($id);
 
