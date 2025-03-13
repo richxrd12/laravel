@@ -24,7 +24,8 @@
 @section('main')
 
     <h1 class="text-2xl text-center">Esto es la landing page</h1>
-    <p class="text-red-600">Hola</p>
+    <p class="text-red-600 text-center">Hola</p>
+    <a href="/mail">Enviar email</a>
 @endsection
 
 

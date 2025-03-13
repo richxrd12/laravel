@@ -1,0 +1,1 @@
+Se envió el email. Victoria<?php /**PATH C:\xampp\htdocs\laravel\resources\views/mail/mail.blade.php ENDPATH**/ ?>

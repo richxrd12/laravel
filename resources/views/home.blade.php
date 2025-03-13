@@ -26,7 +26,7 @@
         $userBlogs = auth()->user()->blogs;  
 
     @endphp
-
+    
     @foreach ($blogs as $blog)
         <x-card :title="$blog->title" :text="$blog->text" :id="$blog->id">
             @if ($userBlogs->contains($blog))

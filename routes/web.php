@@ -1,14 +1,20 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Contracts\Mail\Mailable;
 use App\Http\Controllers\RegisterUserController;
 use App\Http\Controllers\SessionController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\BlogController;
-
 //View principal (Landing page)
 Route::get('/', function () {
-    return view('landing');
+    return view('index');
+});
+
+
+Route::get('mail', function () {
+    \Illuminate\Support\Facades\Mail::to('sercacsal2@gmail.com')->queue(new \App\Mail\Mail());
+    return 'Done';
 });
 
 //Auth
